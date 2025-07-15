@@ -26,6 +26,16 @@
       text-decoration: none;
       font-weight: bold;
     }
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 2px 18px rgba(0,0,0,0.14);
+      margin-top: -70px;
+      background: #fff;
+    }
     section {
       max-width: 800px;
       margin: 2rem auto;
@@ -43,7 +53,16 @@
       padding: 0;
     }
     ul li {
-      margin-bottom: 1rem;
+      margin-bottom: 2.2rem;
+    }
+    .proj-img {
+      max-width: 170px;
+      max-height: 100px;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+      margin-bottom: 7px;
+      background: #fff;
+      display: block;
     }
     .contact-links a {
       display: inline-block;
@@ -64,14 +83,18 @@
     }
     @media (max-width: 700px) {
       section { padding: 1rem; }
+      .profile-pic { width: 100px; height: 100px; margin-top: -50px; }
+      .proj-img { max-width: 100px; }
     }
   </style>
 </head>
 <body>
   <header>
+    <!-- Profile picture, must be uploaded as images/profile.jpg -->
+    <img src="images/profile.jpg" alt="Sina Nazifi Photo" class="profile-pic">
     <h1>Sina Nazifi, PhD, EIT</h1>
     <div class="subtitle">Technology Development Engineer | Advanced Materials & Energy Systems</div>
-    <div class="affiliation">Houston, TX</div>
+    <div class="affiliation">Sugar Land, TX</div>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -100,28 +123,37 @@
     <h2>Featured Projects</h2>
     <ul>
       <li>
+        <img src="images/uh_nanotherm.png" alt="UH NanoTherm Research Group" class="proj-img">
+        <br>
+        <strong>Hydrogen Storage Material Systems</strong><br>
+        Engineered composite materials and test setups to maximize hydrogen storage capability at NanoTherm Lab.<br>
+        <a href="https://www.nanothermlab.com/" target="_blank">NanoTherm Lab, University of Houston</a>
+      </li>
+      <li>
+        <img src="images/elemental_coatings.png" alt="Elemental Coatings" class="proj-img">
+        <br>
         <strong>Advanced Polymeric Coatings for Aerospace & Wind Energy</strong><br>
-        Led end-to-end development and testing of six high-performance coatings (anti-icing, anti-corrosion, anti-scaling) used by aerospace and energy clients. <br>
+        Led development and testing of high-performance coatings for aerospace and energy clients.<br>
         <a href="https://www.elementalcoatings.com/" target="_blank">Elemental Coatings</a>
       </li>
       <li>
+        <img src="images/intel.png" alt="Intel" class="proj-img">
+        <br>
         <strong>Semiconductor Process Innovation at Intel</strong><br>
-        Developed novel process methods for silicon interconnects, improving wafer uniformity and manufacturing yield in next-gen chip fabrication. <br>
+        Developed novel process methods for silicon interconnects, improving wafer uniformity and manufacturing yield.<br>
         <a href="https://www.intel.com/" target="_blank">Intel Corporation</a>
       </li>
       <li>
-        <strong>Hydrogen Storage Material Systems</strong><br>
-        Engineered composite materials and test setups to maximize hydrogen storage capability at NanoTherm Lab. Published results in <a href="https://doi.org/10.1021/acs.langmuir.3c03333" target="_blank">Langmuir</a> and <a href="https://www.sciencedirect.com/science/article/pii/S0017931024003443" target="_blank">IJ Heat Mass Transfer</a>.
+        <img src="images/polymeric_coating.png" alt="Polymeric Coating Illustration" class="proj-img">
+        <br>
+        <strong>Functional Coating Illustration</strong><br>
+        Concept visualization for advanced polymeric coatings in extreme environments.
       </li>
       <li>
-        <strong>Aircraft Design & Structural Integration</strong><br>
-        Designed data-driven modeling tools for weight sizing and performance estimation in advanced trainer and business jet projects.<br>
-        <a href="https://en.sharif.ir/en/web/sharif-en/w/shadx-graduate-student-team-of-sharif-university-of-technology-wins-the-first-place-in-aiaa-aircraft-design-competition" target="_blank">ShadX Team, Sharif University</a>
-      </li>
-      <li>
-        <strong>Peer-Reviewed Publications</strong><br>
-        Author/co-author of 14+ research articles in leading journals including <em>Langmuir</em>, <em>Nature Communications</em>, <em>Materials Horizons</em>, and <em>Journal of Colloid and Interface Science</em>. <br>
-        <a href="https://scholar.google.com/citations?user=5rSHBg4AAAAJ" target="_blank">Google Scholar</a>
+        <img src="images/joule_cover.png" alt="Joule Cover" class="proj-img">
+        <br>
+        <strong>Journal Cover Art</strong><br>
+        Cover image for publication in <em>Joule</em>.
       </li>
     </ul>
   </section>
@@ -132,7 +164,7 @@
     <div class="contact-links">
       <a href="mailto:nazifisina@gmail.com">nazifisina@gmail.com</a>
       <a href="https://www.linkedin.com/in/sinanazifi/" target="_blank">LinkedIn</a>
-      <!-- Add more links as needed -->
+      <a href="tel:3462407178">346-240-7178</a>
     </div>
   </section>
 </body>
